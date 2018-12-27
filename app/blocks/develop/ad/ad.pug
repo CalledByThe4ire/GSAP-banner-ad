@@ -1,0 +1,5 @@
+mixin ad( bem )
+	- const data = global.blocks.ad
+	+b( 'ad', bem )&attributes(attributes)
+		each value in data
+			+e(`${value.element}`, {m: `${value.modifier}`}) #{value.content};

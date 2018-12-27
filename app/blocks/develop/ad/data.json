@@ -1,0 +1,44 @@
+[
+  {
+    "element": "img",
+    "modifier": "clouds",
+    "content": ""
+  },
+  {
+    "element": "img",
+    "modifier": "photo",
+    "content": ""
+  },
+  {
+    "element": "img",
+    "modifier": "shadow",
+    "content": ""
+  },
+  {
+    "element": "img",
+    "modifier": "text",
+    "content": ""
+  },
+  {
+    "element": "img",
+    "modifier": "marker",
+    "content": ""
+  },
+  {
+    "element": "img",
+    "modifier": "surfboard",
+    "content": ""
+  },
+  {
+    "element": "heading",
+    "modifier": "1st",
+    "content": "Feeling Stressed?"
+  },
+  {
+    "element": "heading",
+    "modifier": "2nd",
+    "content": "You could be here!"
+  }
+
+]
+

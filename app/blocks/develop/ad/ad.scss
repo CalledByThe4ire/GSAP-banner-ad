@@ -1,0 +1,87 @@
+.ad {
+  position: relative;
+  width: 650px;
+  height: 200px;
+
+  overflow: hidden;
+
+  &__img {
+    position: absolute;
+    background-image: url('img/graphics.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    &--clouds {
+      top: 0;
+      left: 0;
+
+      width: inherit;
+      height: inherit;
+    }
+
+    &--photo {
+      left: 0;
+      bottom: 0;
+
+      width: inherit;
+      height: 143px;
+
+      background-position: 0 -325px;
+    }
+
+    &--marker {
+      top: 90px;
+      left: 290px;
+
+      width: 60px;
+      height: 95px;
+
+      background-position: -243px -230px;
+    }
+
+    &--shadow {
+      top: 175px;
+      left: 306px;
+
+      width: 35px;
+      height: 16px;
+
+      background-position: -311px -236px;
+    }
+
+    &--text {
+      top: 58px;
+      left: 73px;
+
+      width: 510px;
+      height: 28px;
+
+      background-position: -2px -202px;
+    }
+
+    &--surfboard {
+      top: 110px;
+      left: 390px;
+
+      width: 237px;
+      height: 62px;
+
+      background-position: -2px -233px;
+
+    }
+  }
+
+  &__heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: inherit;
+
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px rgba(0, 0, 102, 0.5);
+  }
+}
