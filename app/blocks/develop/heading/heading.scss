@@ -1,0 +1,13 @@
+.heading {
+  &__letter {
+    position: relative;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: -0.6rem;
+    }
+    &--white-space {
+      margin-right: 0 !important;
+    }
+  }
+}

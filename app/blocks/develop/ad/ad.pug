@@ -2,4 +2,14 @@ mixin ad( bem )
 	- const data = global.blocks.ad
 	+b( 'ad', bem )&attributes(attributes)
 		each value in data
-			+e(`${value.element}`, {m: `${value.modifier}`}) #{value.content};
+			- const arr = Array.from(value.content);
+			if (value.element === 'heading' && value.modifier === '1st')
+				+e(`${value.element}`, {b: `${value.element}`, m: `${value.modifier}`})
+					- arr.forEach((item, idx) => {
+						if (/\S/.test(item))
+							+e('letter', {t: 'span', m: `${idx + 1}`, p: `${value.element}`})= item
+						else
+							+e('letter', {t: 'span', m: `${idx + 1}.white-space`, p: `${value.element}`}) &#32
+					- });
+			else
+				+e(`${value.element}`, {m: `${value.modifier}`})= value.content
